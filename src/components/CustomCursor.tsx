@@ -3,7 +3,6 @@ import { motion, useSpring } from 'framer-motion';
 import './CustomCursor.css';
 
 const CustomCursor: React.FC = () => {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
 
   const springConfig = { damping: 25, stiffness: 200 };
@@ -14,7 +13,6 @@ const CustomCursor: React.FC = () => {
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
-      setMousePos({ x: e.clientX, y: e.clientY });
     };
 
     const handleHover = () => setIsHovering(true);

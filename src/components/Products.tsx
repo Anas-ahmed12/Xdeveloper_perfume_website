@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShoppingBag, Code, ShieldCheck, Zap } from 'lucide-react';
 import './Products.css';
 
 const products = [
