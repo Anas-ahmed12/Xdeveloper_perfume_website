@@ -1,0 +1,91 @@
+.scent-notes {
+  background-color: var(--bg-darker);
+}
+
+.section-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.title-underline {
+  width: 100px;
+  height: 2px;
+  background: var(--accent-gold);
+  margin: 0 auto;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  padding: 30px;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+  }
+}
+
+.note-card:hover {
+  border-color: var(--accent-gold);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-5px);
+}
+
+.note-icon {
+  margin-bottom: 25px;
+}
+
+.note-title {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: var(--text-main);
+}
+
+.note-description {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.note-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-bit {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+}
